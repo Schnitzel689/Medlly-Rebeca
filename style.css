@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Space Grotesk;
+    background-color: #F5F5F5;
+    color: #282828;
+    cursor: url(./images/elements/cur.cur), auto;
+    overflow-x: hidden;
+}
+/* Essa parte é sobre a barra superior de navegação */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 110px;
+    padding-bottom: 100px;
+}
+
+nav img{
+    width: 80px;
+    height: 80px;
+}
+
+ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #202020;
+    text-decoration: none;
+    transition: text-decoration 0.5s ease;
+    cursor: url(./images/elements/cur.cur), auto;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Essa parte é sobre a apresentação inicial */
+article{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 180px;
+}
+
+
+article h1{
+    font-weight: 400;
+    font-size: 70px;
+}
+
+#article img{
+    width: 20px;
+    height: 20px;
+}
+
+.tittle{
+    font-weight: 400;
+    font-size: 35px;
+    border-bottom: 3px solid #282828;;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 100px;
+    padding: 30px;
+}
+
+
+/* Essa parte é sobre os projetos*/
+#art{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#previewArt{
+    margin-bottom: 180px;
+}
+
+.artTittle{
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+section .artContent img{
+    border-radius: 10px;
+}
+
+section .artContent{
+    transition: transform 0.3s ease;
+}
+
+    section .artContent:hover{
+        cursor: url(./images/elements/cur-white.cur), auto;
+        transform: scale(1.2);
+    }
+
+#iconMore{
+    padding: 5px;
+    transition: transform 0.2s ease;
+}
+
+    #iconMore:hover{
+        transform: scale(1.2);
+        cursor: url(./images/elements/cur.cur), auto;
+    }
+
+/* Essa parte é sobre a criação de conteudo*/
+#creation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-bottom: 180px;
+}
+
+#contentCreation p{
+    font-size: 30px;
+}
+
+#contentCreation a{
+    color: #282828;
+    border: 1px solid #F5F5F5;
+    position: relative;
+    top: 55px;
+}
+
+#link{
+    position: relative;
+    top: 57px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+#instagramVideo{
+    transform: scale(1.2);
+}
+
+/* Essa parte é sobre a seção sobre mim*/
+
+#aboutMe{
+    margin-bottom: 180px;
+}
+
+#contentAboutMe{
+    display:grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: top;
+    gap: 70px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+#contentAboutMe p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.aboutMeText{
+    font-weight: 600;
+    font-size:20px;
+    border-bottom: 1px solid #282828;
+    padding-bottom: 20px;
+}
+
+.TextSpanAboutMe{
+    padding: 6px 15px;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+/* Essa parte é sobre a seção Diga oii*/
+#contatMe{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+
+#SayHello{
+    margin-bottom: 180px;
+}
+
+#contatMe p{
+    font-size: 20px;
+}
+
+#contatMe form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.msn{
+    border: 2px solid #282828;
+    background-color: #F5F5F5;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: url(./images/elements/cur.cur), auto;
+}
+
+
+#contatMe form button{
+    transition: 0.2s ease;
+}
+
+    #contatMe form button:hover{
+        cursor: pointer;
+        background-color: #202020;
+    }
+
+
+/* Essa parte é sobre a seção do contato via Whatsapp*/
+
+#whatsapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    border-top: 3px solid #282828;
+    border-style: dashed;
+    height: 300px;
+}
+
+#whatsapp h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+#whatsapp p{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+
+#whatsapp i{
+    margin-top: 20px;  
+    transition: transform 0.3s ease; 
+    padding: 10px;
+}
+
+#whatsapp i:hover{
+    transform: scale(1.2);
+}
+
+/* Essa parte é sobre a seção do rodapé*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100px;
+}
+
+footer img{
+    width: 80px;
+    height: 80px;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
